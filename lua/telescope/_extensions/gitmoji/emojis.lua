@@ -16,7 +16,7 @@ local emojis = {
     },
     {
         key = "bug",
-        value = "🐞",
+        value = "🐛",
         description = "Fix a bug.",
     },
     {
