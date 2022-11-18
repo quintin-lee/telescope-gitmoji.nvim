@@ -23,7 +23,7 @@ end
 
 return telescope.register_extension({
     setup = function(cfg)
-        commit_type = cfs.commit_type or gm_emojis.emojis
+        commit_type = cfg.commit_type or gm_emojis.emojis
         action = cfg.action or gm_actions.commit
     end,
     exports = {
