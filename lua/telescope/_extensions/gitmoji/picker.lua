@@ -4,9 +4,7 @@ local finders = require("telescope.finders")
 local pickers = require("telescope.pickers")
 local conf = require("telescope.config").values
 
-local emojis = require("telescope._extensions.gitmoji.emojis")
-
-local picker = function(opts)
+local picker = function(opts, emojis)
     opts = opts or {}
 
     pickers.new(opts, {
