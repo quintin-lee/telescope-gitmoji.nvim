@@ -15,6 +15,7 @@ local picker = function(opts)
             results = emojis,
             entry_maker = function(entry)
                 return {
+                    key = entry.key,
                     value = entry.value,
                     display = entry.value .. " " .. entry.description,
                     ordinal = entry.description,
